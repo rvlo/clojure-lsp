@@ -7,6 +7,9 @@ if [ -z "$GRAALVM_HOME" ]; then
     exit 1
 fi
 
+echo "$CLOJURE_LSP_JAR"
+ls -lh
+
 if [[ ! -f "$CLOJURE_LSP_JAR" ]]
 then
     lein with-profiles +native-image "do" clean, uberjar
