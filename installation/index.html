@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="https://clojure-lsp.github.io/clojure-lsp/features/">
+        <link rel="canonical" href="https://clojure-lsp.github.io/clojure-lsp/installation/">
       
       <link rel="shortcut icon" href="../images/logo-light.svg">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
     
     
       
-        <title>Features - Clojure LSP</title>
+        <title>Installation - Clojure LSP</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#features" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Features
+              Installation
             
           </span>
         </div>
@@ -181,12 +181,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
+    <a href="../features/" class="md-tabs__link">
       Features
     </a>
   </li>
@@ -195,10 +193,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="../installation/" class="md-tabs__link">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       Installation
     </a>
   </li>
@@ -372,6 +372,19 @@
       
 
 
+
+  <li class="md-nav__item">
+    <a href="../features/" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   
 
 
@@ -383,12 +396,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Features
+        Installation
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Features
+      Installation
     </a>
     
       
@@ -405,246 +418,24 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#find-a-functionvar-definition" class="md-nav__link">
-    Find a function/var definition
+  <a href="#native-binary-recommended" class="md-nav__link">
+    Native binary (recommended)
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#find-all-references-of-a-function-var-keyword-or-namespace-alias" class="md-nav__link">
-    Find all references of a function, var, keyword or namespace alias
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#show-all-workspaceproject-symbols" class="md-nav__link">
-    Show all workspace/project symbols
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#show-all-symbols-on-current-file" class="md-nav__link">
-    Show all symbols on current file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rename-symbols" class="md-nav__link">
-    Rename symbols
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cursor-hover-showing-symbol-usages" class="md-nav__link">
-    Cursor hover showing symbol usages
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-actions" class="md-nav__link">
-    Code actions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-lenses-showing-symbol-references" class="md-nav__link">
-    Code lenses showing symbol references
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#format-a-whole-file-or-range" class="md-nav__link">
-    Format a whole file or range
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#semantic-tokens" class="md-nav__link">
-    Semantic tokens
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#call-hierarchy-incoming-only" class="md-nav__link">
-    Call hierarchy (Incoming only)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#execute-command" class="md-nav__link">
-    Execute command
-  </a>
-  
-    <nav class="md-nav" aria-label="Execute command">
+    <nav class="md-nav" aria-label="Native binary (recommended)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#refactoring" class="md-nav__link">
-    Refactoring
-  </a>
-  
-    <nav class="md-nav" aria-label="Refactoring">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add-import-to-namespace" class="md-nav__link">
-    Add import to namespace
+  <a href="#manually" class="md-nav__link">
+    Manually
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-missing-namespace-available-via-code-actions-too" class="md-nav__link">
-    Add missing namespace (available via code actions too)
+  <a href="#script" class="md-nav__link">
+    Script
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#extract-function-available-via-code-actions-too" class="md-nav__link">
-    Extract Function (available via code actions too)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#inline-symbol-available-via-code-actions-too" class="md-nav__link">
-    Inline Symbol (available via code actions too)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#clean-namespace-available-via-code-actions-too" class="md-nav__link">
-    Clean namespace (available via code actions too)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cycle-privacy-of-defdefn" class="md-nav__link">
-    Cycle privacy of def/defn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cycle-collection" class="md-nav__link">
-    Cycle collection (#{}, {}, [], ())
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#change-collection-to" class="md-nav__link">
-    Change collection to {}, (), #{}, []
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#expand-let" class="md-nav__link">
-    Expand let
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#introduce-let" class="md-nav__link">
-    Introduce let
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#move-expression-to-let" class="md-nav__link">
-    Move expression to let
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thread-first-expression" class="md-nav__link">
-    Thread first expression
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thread-last-expression" class="md-nav__link">
-    Thread last expression
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thread-first-all" class="md-nav__link">
-    Thread first all
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thread-last-all" class="md-nav__link">
-    Thread last all
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unwind-all" class="md-nav__link">
-    Unwind all
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unwind-thread" class="md-nav__link">
-    Unwind thread
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dev" class="md-nav__link">
-    Dev
-  </a>
-  
-    <nav class="md-nav" aria-label="Dev">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#server-information" class="md-nav__link">
-    Server information
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cursor-information" class="md-nav__link">
-    Cursor information
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -654,8 +445,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-message-to-client-during-any-server-process" class="md-nav__link">
-    Custom message to client during any server process
+  <a href="#embedded-jar-legacy-executable" class="md-nav__link">
+    Embedded jar (Legacy executable)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nix" class="md-nav__link">
+    Nix
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
   </a>
   
 </li>
@@ -664,19 +469,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="../installation/" class="md-nav__link">
-      Installation
-    </a>
   </li>
 
     
@@ -731,246 +523,24 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#find-a-functionvar-definition" class="md-nav__link">
-    Find a function/var definition
+  <a href="#native-binary-recommended" class="md-nav__link">
+    Native binary (recommended)
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#find-all-references-of-a-function-var-keyword-or-namespace-alias" class="md-nav__link">
-    Find all references of a function, var, keyword or namespace alias
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#show-all-workspaceproject-symbols" class="md-nav__link">
-    Show all workspace/project symbols
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#show-all-symbols-on-current-file" class="md-nav__link">
-    Show all symbols on current file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rename-symbols" class="md-nav__link">
-    Rename symbols
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cursor-hover-showing-symbol-usages" class="md-nav__link">
-    Cursor hover showing symbol usages
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-actions" class="md-nav__link">
-    Code actions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-lenses-showing-symbol-references" class="md-nav__link">
-    Code lenses showing symbol references
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#format-a-whole-file-or-range" class="md-nav__link">
-    Format a whole file or range
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#semantic-tokens" class="md-nav__link">
-    Semantic tokens
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#call-hierarchy-incoming-only" class="md-nav__link">
-    Call hierarchy (Incoming only)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#execute-command" class="md-nav__link">
-    Execute command
-  </a>
-  
-    <nav class="md-nav" aria-label="Execute command">
+    <nav class="md-nav" aria-label="Native binary (recommended)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#refactoring" class="md-nav__link">
-    Refactoring
-  </a>
-  
-    <nav class="md-nav" aria-label="Refactoring">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add-import-to-namespace" class="md-nav__link">
-    Add import to namespace
+  <a href="#manually" class="md-nav__link">
+    Manually
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-missing-namespace-available-via-code-actions-too" class="md-nav__link">
-    Add missing namespace (available via code actions too)
+  <a href="#script" class="md-nav__link">
+    Script
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#extract-function-available-via-code-actions-too" class="md-nav__link">
-    Extract Function (available via code actions too)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#inline-symbol-available-via-code-actions-too" class="md-nav__link">
-    Inline Symbol (available via code actions too)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#clean-namespace-available-via-code-actions-too" class="md-nav__link">
-    Clean namespace (available via code actions too)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cycle-privacy-of-defdefn" class="md-nav__link">
-    Cycle privacy of def/defn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cycle-collection" class="md-nav__link">
-    Cycle collection (#{}, {}, [], ())
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#change-collection-to" class="md-nav__link">
-    Change collection to {}, (), #{}, []
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#expand-let" class="md-nav__link">
-    Expand let
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#introduce-let" class="md-nav__link">
-    Introduce let
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#move-expression-to-let" class="md-nav__link">
-    Move expression to let
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thread-first-expression" class="md-nav__link">
-    Thread first expression
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thread-last-expression" class="md-nav__link">
-    Thread last expression
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thread-first-all" class="md-nav__link">
-    Thread first all
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#thread-last-all" class="md-nav__link">
-    Thread last all
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unwind-all" class="md-nav__link">
-    Unwind all
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unwind-thread" class="md-nav__link">
-    Unwind thread
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dev" class="md-nav__link">
-    Dev
-  </a>
-  
-    <nav class="md-nav" aria-label="Dev">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#server-information" class="md-nav__link">
-    Server information
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cursor-information" class="md-nav__link">
-    Cursor information
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -980,8 +550,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-message-to-client-during-any-server-process" class="md-nav__link">
-    Custom message to client during any server process
+  <a href="#embedded-jar-legacy-executable" class="md-nav__link">
+    Embedded jar (Legacy executable)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nix" class="md-nav__link">
+    Nix
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
   </a>
   
 </li>
@@ -998,107 +582,35 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/clojure-lsp/clojure-lsp/edit/master/docs/features.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/clojure-lsp/clojure-lsp/edit/master/docs/installation.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="features">Features<a class="headerlink" href="#features" title="Permanent link">#</a></h1>
-<p>Above you can find all available features that clojure-lsp provide with examples using <a href="https://emacs-lsp.github.io/lsp-mode/">Emacs lsp-mode</a> client.</p>
-<h3 id="find-a-functionvar-definition">Find a function/var definition<a class="headerlink" href="#find-a-functionvar-definition" title="Permanent link">#</a></h3>
-<p><img alt="" src="../images/features/find-definition.gif" /></p>
-<h3 id="find-all-references-of-a-function-var-keyword-or-namespace-alias">Find all references of a function, var, keyword or namespace alias<a class="headerlink" href="#find-all-references-of-a-function-var-keyword-or-namespace-alias" title="Permanent link">#</a></h3>
-<p><img alt="" src="../images/features/find-references.gif" /></p>
-<h3 id="show-all-workspaceproject-symbols">Show all workspace/project symbols<a class="headerlink" href="#show-all-workspaceproject-symbols" title="Permanent link">#</a></h3>
-<p><img alt="" src="../images/features/workspace-symbols.gif" /></p>
-<h3 id="show-all-symbols-on-current-file">Show all symbols on current file<a class="headerlink" href="#show-all-symbols-on-current-file" title="Permanent link">#</a></h3>
-<p><img alt="" src="../images/features/document-symbols.gif" /></p>
-<h3 id="rename-symbols">Rename symbols<a class="headerlink" href="#rename-symbols" title="Permanent link">#</a></h3>
-<p><img alt="" src="../images/features/rename.gif" /></p>
-<h3 id="cursor-hover-showing-symbol-usages">Cursor hover showing symbol usages<a class="headerlink" href="#cursor-hover-showing-symbol-usages" title="Permanent link">#</a></h3>
-<h3 id="code-actions">Code actions<a class="headerlink" href="#code-actions" title="Permanent link">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Clean namespace require/imports</td>
-<td><img src="../images/features/clean-ns.gif" width=360></td>
-</tr>
-<tr>
-<td>Inline symbol</td>
-<td><img src="../images/features/inline-symbol.gif" width=360></td>
-</tr>
-<tr>
-<td>Extract function</td>
-<td><img src="../images/features/extract-function.gif" width=360></td>
-</tr>
-<tr>
-<td>Add missing require</td>
-<td><img src="../images/features/add-missing-require.gif" width=360></td>
-</tr>
-<tr>
-<td>Add known common require</td>
-<td><img src="../images/features/add-common-require.gif" width=360></td>
-</tr>
-<tr>
-<td>Add known common import</td>
-<td><img src="../images/features/add-common-import.gif" width=360></td>
-</tr>
-<tr>
-<td>Add suggested alias require</td>
-<td><img src="../images/features/add-alias-suggestion.gif" width=360></td>
-</tr>
-<tr>
-<td>Move to let</td>
-<td><img src="../images/features/move-to-let.gif" width=360></td>
-</tr>
-<tr>
-<td>Change coll to map,vector,set,list</td>
-<td><img src="../images/features/change-coll.gif" width=360></td>
-</tr>
-</tbody>
-</table>
-<h3 id="code-lenses-showing-symbol-references">Code lenses showing symbol references<a class="headerlink" href="#code-lenses-showing-symbol-references" title="Permanent link">#</a></h3>
-<p><img alt="" src="../images/features/code-lens.png" /></p>
-<h3 id="format-a-whole-file-or-range">Format a whole file or range<a class="headerlink" href="#format-a-whole-file-or-range" title="Permanent link">#</a></h3>
-<p><img alt="" src="../images/features/format-buffer.gif" /></p>
-<h3 id="semantic-tokens">Semantic tokens<a class="headerlink" href="#semantic-tokens" title="Permanent link">#</a></h3>
-<p>Experimental: apply color on client editor for each known token</p>
-<h3 id="call-hierarchy-incoming-only">Call hierarchy (Incoming only)<a class="headerlink" href="#call-hierarchy-incoming-only" title="Permanent link">#</a></h3>
-<p><img alt="" src="../images/features/call-hierarchy.png" /></p>
-<h3 id="execute-command">Execute command<a class="headerlink" href="#execute-command" title="Permanent link">#</a></h3>
-<p>Commands that client can request. Some code actions use these commands as actions.</p>
-<h4 id="refactoring">Refactoring<a class="headerlink" href="#refactoring" title="Permanent link">#</a></h4>
-<p>Commands that change/refactor the code, most of them are available via code actions.</p>
-<h5 id="add-import-to-namespace">Add import to namespace<a class="headerlink" href="#add-import-to-namespace" title="Permanent link">#</a></h5>
-<h5 id="add-missing-namespace-available-via-code-actions-too">Add missing namespace (available via code actions too)<a class="headerlink" href="#add-missing-namespace-available-via-code-actions-too" title="Permanent link">#</a></h5>
-<h5 id="extract-function-available-via-code-actions-too">Extract Function (available via code actions too)<a class="headerlink" href="#extract-function-available-via-code-actions-too" title="Permanent link">#</a></h5>
-<h5 id="inline-symbol-available-via-code-actions-too">Inline Symbol (available via code actions too)<a class="headerlink" href="#inline-symbol-available-via-code-actions-too" title="Permanent link">#</a></h5>
-<h5 id="clean-namespace-available-via-code-actions-too">Clean namespace (available via code actions too)<a class="headerlink" href="#clean-namespace-available-via-code-actions-too" title="Permanent link">#</a></h5>
-<h5 id="cycle-privacy-of-defdefn">Cycle privacy of def/defn<a class="headerlink" href="#cycle-privacy-of-defdefn" title="Permanent link">#</a></h5>
-<h5 id="cycle-collection">Cycle collection (#{}, {}, [], ())<a class="headerlink" href="#cycle-collection" title="Permanent link">#</a></h5>
-<h5 id="change-collection-to">Change collection to {}, (), #{}, []<a class="headerlink" href="#change-collection-to" title="Permanent link">#</a></h5>
-<h5 id="expand-let">Expand let<a class="headerlink" href="#expand-let" title="Permanent link">#</a></h5>
-<h5 id="introduce-let">Introduce let<a class="headerlink" href="#introduce-let" title="Permanent link">#</a></h5>
-<h5 id="move-expression-to-let">Move expression to let<a class="headerlink" href="#move-expression-to-let" title="Permanent link">#</a></h5>
-<h5 id="thread-first-expression">Thread first expression<a class="headerlink" href="#thread-first-expression" title="Permanent link">#</a></h5>
-<h5 id="thread-last-expression">Thread last expression<a class="headerlink" href="#thread-last-expression" title="Permanent link">#</a></h5>
-<h5 id="thread-first-all">Thread first all<a class="headerlink" href="#thread-first-all" title="Permanent link">#</a></h5>
-<h5 id="thread-last-all">Thread last all<a class="headerlink" href="#thread-last-all" title="Permanent link">#</a></h5>
-<h5 id="unwind-all">Unwind all<a class="headerlink" href="#unwind-all" title="Permanent link">#</a></h5>
-<h5 id="unwind-thread">Unwind thread<a class="headerlink" href="#unwind-thread" title="Permanent link">#</a></h5>
-<h4 id="dev">Dev<a class="headerlink" href="#dev" title="Permanent link">#</a></h4>
-<h5 id="server-information">Server information<a class="headerlink" href="#server-information" title="Permanent link">#</a></h5>
-<p>Return basic information about the server.</p>
-<h5 id="cursor-information">Cursor information<a class="headerlink" href="#cursor-information" title="Permanent link">#</a></h5>
-<p>Return debug information about the element at point.</p>
-<h3 id="custom-message-to-client-during-any-server-process">Custom message to client during any server process<a class="headerlink" href="#custom-message-to-client-during-any-server-process" title="Permanent link">#</a></h3>
-<p>During some process, <code>clojure-lsp</code> send messages to client informing some proccess, warning or error.</p>
+                <h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h1>
+<p>Below are all available <code>clojure-lsp</code> installation methods, after installed, follow the documentation for your editor's language client. See <a href="//clojure-lsp.github.io/clojure-lsp/clients">Clients</a>.</p>
+<h2 id="native-binary-recommended">Native binary (recommended)<a class="headerlink" href="#native-binary-recommended" title="Permanent link">#</a></h2>
+<p><code>clojure-lsp</code> builds using GraalVM a native executable for each OS: Linux, MacOS and Windows. </p>
+<h3 id="manually">Manually<a class="headerlink" href="#manually" title="Permanent link">#</a></h3>
+<p>The binaries are available on <a href="https://github.com/clojure-lsp/clojure-lsp/releases">Github releases</a> as <code>clojure-lsp-native-&lt;os&gt;-&lt;arch&gt;.zip</code>, after downloading you just need to unzip it.</p>
+<h3 id="script">Script<a class="headerlink" href="#script" title="Permanent link">#</a></h3>
+<p>You can install it running <a href="https://github.com/clojure-lsp/clojure-lsp/blob/master/install-latest-clojure-lsp.sh">./install-latest-clojure-lsp.sh</a></p>
+<h2 id="embedded-jar-legacy-executable">Embedded jar (Legacy executable)<a class="headerlink" href="#embedded-jar-legacy-executable" title="Permanent link">#</a></h2>
+<p>In Github releases you will find a <code>clojure-lsp</code> file that runs a embedded jar. This should be removed soon, use GraalVM binaries instead. </p>
+<ul>
+<li>You need <code>java</code> on your $PATH.</li>
+<li>Grab the latest <code>clojure-lsp</code> from github <a href="https://github.com/snoe/clojure-lsp/releases/latest">LATEST</a></li>
+<li>Place it in your $PATH with a chmod 755</li>
+</ul>
+<h2 id="nix">Nix<a class="headerlink" href="#nix" title="Permanent link">#</a></h2>
+<p><code>clojure-lsp</code> is available in the <a href="https://github.com/NixOS/nixpkgs/blob/master/pkgs/development/tools/misc/clojure-lsp/default.nix">nixpkgs</a>:</p>
+<div class="highlight"><pre><span></span><code>nix-shell -p clojure-lsp
+</code></pre></div>
+<h2 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">#</a></h2>
+<p><code>clojure-lsp</code> is available as a native executable in the <a href="https://github.com/littleli/scoop-clojure">Clojure Scoop bucket</a>. You need to <a href="https://github.com/littleli/scoop-clojure/wiki/Getting-started#installation">install Scoop</a> if you don't have it already.</p>
+<p>Issue following command to download the <code>clojure-lsp</code> executable.</p>
+<div class="highlight"><pre><span></span><code>scoop install clojure-lsp
+</code></pre></div>
                 
                   
                     
@@ -1130,7 +642,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../capabilities/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../features/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1139,19 +651,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Capabilities
+                Features
               </div>
             </div>
           </a>
         
         
-          <a href="../installation/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../CHANGELOG/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Installation
+                Changelog
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
